@@ -46,7 +46,7 @@ public class WishlistController {
             @PathVariable String customerId,
             @RequestBody Product product) {
         addProductToWishlist.execute(customerId, product);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 
     @Operation(summary = "Remove a product to the wishlist")
