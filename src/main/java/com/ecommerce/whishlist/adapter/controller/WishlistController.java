@@ -45,7 +45,7 @@ public class WishlistController {
     public ResponseEntity<Void> addProductToWishlist(
             @PathVariable String customerId,
             @RequestBody Product product) {
-        addProductToWishlist.execute(customerId, product);
+        addProductToWishlist.addProductToWishlist(customerId, product);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 

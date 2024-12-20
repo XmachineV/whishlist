@@ -11,5 +11,4 @@ public interface WishlistMongoRepository extends MongoRepository<WishlistDocumen
 
     Optional<Wishlist> findByCustomerId(String customerId);
 
-    void deleteByCustomerId(String customerId);
 }

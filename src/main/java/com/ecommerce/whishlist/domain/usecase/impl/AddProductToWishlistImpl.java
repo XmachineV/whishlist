@@ -15,7 +15,7 @@ public class AddProductToWishlistImpl implements AddProductToWishlist {
     }
 
     @Override
-    public void execute(String customerId, Product product) {
+    public void addProductToWishlist(String customerId, Product product) {
         Wishlist wishlist = wishlistRepository.findByCustomerId(customerId)
                 .orElse(new Wishlist(customerId));
 
